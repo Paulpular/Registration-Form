@@ -10,110 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="form-container">
+    <form class="form-container">
         <h1>Sponsor Registration</h1>
 
         <div class="form-left-side">
-            <form class="prefix">
-                <label for="prefix">Prefix</label>
-                <input id="prefix" type="text">
-            </form>
-            
-            <form class="name">
-                <label class="label-name" for="name">Name</label>
-                <input class="input-first-name" id="name" type="text" name="name" placeholder="First Name" required>
-                <input class="input-last-name" id="name" type="text" name="name" placeholder="Last Name" required>
-            </form>
+            <label class="prefix" for="prefix">Prefix</label>
+            <input type="text" name="text" id="prefix" placeholder="">
 
-            <form class="pronounce">
-                <label class="label-pronounce" for="preferred pronounce">Preferred Pronouns</label>
-                <input class="input-pronounce" id="preferred pronounce" type="text" name="Mr Mrs Others" required>
-            </form>
-
-            <form class="email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="sample@example.com" required>
-            </form>
-
-            <form class="for-phones">
-                <label class="phone-label" for="work phone">Work Phone</label>
-                <input class="phone-input" type="tel" name="tel" id="work phone" placeholder="" required>
-            </form>
-
-            <form class="for-phones">
-                <label class="phone-label" for="cell phone">Cell Phone</label>
-                <input class="phone-input" type="tel" name="tel" id="cell phone" placeholder="" required>
-            </form>
-
-            <form class="company">
-                <label for="company">Company</label>
-                <input type="text" name="company" id="company" placeholder="" required>
-            </form>
-
-            <form class="business-address">
-                <label class="business-address-label" for="business address">Full Business Address</label>
-                <input class="business-address-input" type="text" name="business address" id="business address" placeholder="" required>
-            </form>
-
-            <form class="company-website">
-                <label class="company-website-label" for="company website">Company Website</label>
-                <input class="company-website-input" type="url" name="url" id="company website" placeholder="" required>
-            </form>
-        </div>
-
-        <div class="vertical-line">
-            <div class="line">
-
-            </div>
-        </div>
-
-        <div class="form-right-side">
-            <form class="company-description">
-                <label class="company-description-label" for="company description">Company Description</label>
-                <input class="company-description-input" type="text" name="company description" id="company description" placeholder="" required>
-
-                <label class="media-page-label" for="company facebook page">Company Facebook Page</label>
-                <input class="media-page-input" type="url" name="company facebook page" id="company facebbok page" placeholder="" required>
-
-                <label class="media-page-label" for="company twitter page">Company Twitter Page</label>
-                <input class="media-page-input" type="url" name="company twitter page" id="company twitter page" placeholder="" required>
-
-                <label class="media-page-label" for="company linkedin page">Company Linkedin Page</label>
-                <input class="media-page-input" type="url" name="company linkedin page" id="company linkedin page" placeholder="" required>
-            </form>
-
-            <div class="radio-checkbox">
-                <form class="radio">
-                    <label class="sponsorship-label" for="sponsorship">Sponsorship Level</label>
-
-                    <input class="gold-input" type="radio" name="radio" id="gold" value="Gold">
-                    <label class="gold-label" for="gold">Gold</label>
-
-                    <input class="diamond-input" type="radio" name="radio" id="diamond" value="Diamond">
-                    <label class="diamond-label" for="diamond">Diamond</label>
-
-                    <input class="platinum-input" type="radio" name="radio" id="platinum" value="Platinum">
-                    <label class="platinum-label" for="platinum">Platinum</label>
-                </form>
-                <form class="checkbox">
-                    <label class="checkbox-label" for="checkbox-label">Your Media</label>
-
-                    <input class="facebook-input" type="checkbox" name="checkbox" id="gold" value="facebbok">
-                    <label class="facebook-label" for="gold">Facebook</label>
-
-                    <input class="twitter-input" type="checkbox" name="checkbox" id="diamond" value="twitter">
-                    <label class="twitter-label" for="diamond">Twitter</label>
-
-                    <input class="linkedin-input" type="checkbox" name="checkbox" id="platinum" value="linkedin">
-                    <label class="linkedin-label" for="platinum">Linkedin</label>
-                </form>
+            <div class="first_last_name">
+                <label for="name">Name</label>
+                <input class="first-name" type="text" name="text" id="name" placeholder="First Name" required>
+                <input class="last-name" type="text" name="text" id="name" placeholder="Last Name" required>
             </div>
 
-            <form class="additional guests">
-                <label class="additional-guest-label" for="additional guests">Additional Guests (Name/Email)</label>
-                <input class="additional-guest-input" type="text" name="additional guests" id="additional guests" placeholder="" required>
-            </form>
+            <div class="pronouns_container">
+                <label class="pronouns" for="preferred pronouns">Preferred Pronouns</label>
+                <input class="preferred-pronouns" type="text" name="text" id="preferred pronouns" placeholder="" required>
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
