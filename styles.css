@@ -7,11 +7,14 @@
 
 body {
     background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 25%);
 }
 
 .form-container {
     width: 60%;
-    height: 100vh;
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
     text-align: center;
     margin: 0 auto;
     background: hsl(0, 0%, 100%);
@@ -19,7 +22,9 @@ body {
 
 h1 {
     font-size: 1.5rem;
-    margin: 0 0 1rem;
+    padding: 1rem 0 1.5rem;
+    position: absolute;
+    left: 35%;
 }
 
 .form-left-side {
@@ -28,19 +33,19 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 0 0 1rem;
+    padding: 5rem 0 1rem;
 }
 
 label {
     width: 20%;
     font-size: 1rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.2rem;
 }
 
 input {
-    width: 65%;
+    width: 55%;
     height: 2rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.2rem;
     text-align: center;
     border: 1.5px solid hsl(0, 0%, 75%);
 }
@@ -48,27 +53,173 @@ input {
 .first_last_name {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 3%;
+    margin: 0 0 0 1.6rem;
 }
 
 .first-name {
-    width: 30%;
+    width: 31%;
     height: 2rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.2rem 2.4rem;
 }
 
 .last-name {
-    width: 27%;
+    width: 25%;
     height: 2rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.2rem;
+}
+
+.pronouns_container {
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pronouns {
-    width: 40%;
+    width: 50%;
+    text-align: left;
+    margin: 0 0 1.2rem 1rem;
 }
 
 .preferred-pronouns {
-    width: 30%;
+    width: 40%;
     height: 2rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.2rem;
+}
+
+.phones_title_company-label {
+    width: 25%;
+    text-align: left;
+    margin: 0 0 0 2.1rem;
+    padding: 0 0 1.2rem;
+}
+
+.phones_title_company-input {
+    width: 55%;
+    margin: 0 1.05rem 1.18rem 0;
+}
+
+.address_website-label {
+    width: 78%;
+    text-align: left;
+    margin: 0 0 0.5rem;
+}
+
+.address_website-input {
+    width: 83%;
+    margin: 0 0 1rem 1.2rem;
+}
+
+.vertical-line {
+    height: 34rem;
+    position: absolute;
+    border-left: 2px solid hsl(0, 0%, 92%);
+    top: 12.5%;
+    left: 50%;
+}
+
+.form-right-side {
+    width: 50%;
+    padding: 5rem 0 0;
+}
+
+.description-label {
+    width: 50%;
+    display: flex;
+    margin: 0 0 0 1.9rem;
+    padding: 0 0 0.5rem;
+}
+
+.description-input {
+    width: 83%;
+    height: 3.5rem;
+}
+
+.facebook_twitter_linkedin-label {
+    width: 70%;
+    display: flex;
+    margin: 0 0 0 1.9rem;
+    padding: 0 0 0.5rem;
+}
+
+.facebook_twitter_linkedin-input {
+    width: 83%;
+    margin: 0 0 1.5rem;
+}
+
+.sponsorship-level {
+    display: flex;
+    position: relative;
+    padding: 1.5rem 0 1rem;
+}
+
+p {
+    position: absolute;
+    top: 1%;
+    left: 9%;
+}
+
+.media {
+    position: absolute;
+    top: 1%;
+    left: 60%;
+}
+
+.sponsorship, .social-media {
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.gold-input, .diamond-input, .platinum-input {
+    width: 9%;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+}
+
+.diamond-input {
+    top: 39%;
+}
+
+.platinum-input {
+    top: 72%;
+}
+
+.gold-label, .diamond-label, .platinum-label {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    font-size: 0.9rem;
+    margin: 0.6rem 0 0 5rem;
+}
+
+.facebook-input, .twitter-input, .linkedin-input {
+    width: 9%;
+    position: absolute;
+    top: 5%;
+    left: 18%;
+}
+
+.twitter-input {
+    top: 39%;
+}
+
+.linkedin-input {
+    top: 72%;
+}
+
+.facebook-label, .twitter-label, .linkedin-label {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    font-size: 0.9rem;
+    margin: 0.6rem 0 0 3.5rem;
+}
+
+input:checked + label { 
+    font-weight: bold;
+     color: hsl(0, 0%, 20%);
 }
