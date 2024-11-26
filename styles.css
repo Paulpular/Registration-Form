@@ -223,3 +223,82 @@ input:checked + label {
     font-weight: bold;
      color: hsl(0, 0%, 20%);
 }
+
+.button {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        top: 0;
+        left: 20%
+    }
+
+    .form-container {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-left-side {
+        width: 100%;
+    }
+
+    .form-right-side {
+        width: 100%;
+        margin: 0 0 0 1rem;
+    }
+
+    .vertical-line {
+        height: 2px;
+        border-right: 23.9rem solid hsl(0 0% 92%);
+        top: 52%;
+        left: 0;
+    }
+
+    .button {
+        width: 83.5%;
+        display: inline;
+        font-size: 1rem;
+        background: rgb(78, 195, 241);
+        color: hsl(0 0% 100%);
+        border: 1px solid hsl(0 0% 100%);
+        margin: 0 0 1.2rem 0.1rem;
+        cursor: pointer;
+    }
+      
+      .submit {
+        text-decoration: none;
+    }
+      
+      input:checked + label {
+        font-weight: bold;
+        color: hsl(0 0% 30%);
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .vertical-line {
+        border-right: 23rem solid hsl(0 0% 92%);
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    h1 {
+        left: 18%
+    }
+
+    .vertical-line {
+        border-right: 22rem solid hsl(0 0% 92%);
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .vertical-line {
+        border-right: 21rem solid hsl(0 0% 92%);
+        left: 0;
+    }
+}
